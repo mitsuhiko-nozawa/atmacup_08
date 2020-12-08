@@ -1,0 +1,100 @@
+common_param :
+  dir_path : /home/ubuntu/atmacup/08/Code/Experiments/exp_000
+  data_path : /home/ubuntu/atmacup/08/Data
+  train_file : train.csv
+  test_file : test.csv
+
+  target_col : Global_Sales
+
+
+prepro_param : 
+  piplines : [
+    Publisher_encode,
+    Developer_encode,
+    Year_of_Release_encode,
+    Rating_encode,
+    equal_Pub_Dev,
+    Summarize_Sales, 
+    count_encode,
+    onehot_encode,
+    User_Count_tbd2Null, 
+    fillna, 
+    label_encode, 
+    make_X_y,
+  ]
+
+  Rating_encode : 
+    flag : True
+
+  Year_of_Release_encode :
+    flag : True
+
+  Developer_encode : 
+    flag : True
+
+  Publisher_encode : 
+    flag : True
+
+  equal_Pub_Dev : 
+    flag : True
+
+  count_encode : 
+    flag : True
+    cols : [Name]
+  
+  onehot_encode : 
+    flag : False
+    cols : [Rating]
+
+  User_Count_tbd2Null : 
+    flag : True
+
+  fillna : 
+    flag : True
+    
+  label_encode : 
+    flag : True
+    cols : [Platform, Year_of_Release, Genre, Publisher, Developer, Rating]
+
+  make_X_y : 
+    flag : True
+    target_col : Global_Sales
+    drop_cols : [Name, NA_Sales, EU_Sales, JP_Sales, Other_Sales, Global_Sales, Platform]
+
+  Summarize_Sales :
+    flag : True
+    sales_cols : [NA_Sales, EU_Sales, JP_Sales, Other_Sales, Global_Sales]
+    by : [Genre, Platform] # Developer, Year_of_Releaseはだめ
+
+
+
+train_param : 
+  make_submit : 
+    flag : True
+  make_train_preds : 
+    flag : True
+  save_feature_importances : 
+    flag : True
+  save_X : 
+    flag : True
+  
+  metric : RMSLE
+  seeds : [0, 1, 2, 3, 4]
+  K : 5
+  validation : GroupKFold
+  # validation : StratifiedKFold # ダメ
+  # validation : KFold # ダメ
+  model : LGBM
+  model_param : # lightgbm
+    max_depth : 6
+    n_estimators : 10000
+    colsample_bytree : 0.5
+    #num_leaves : 28
+    learning_rate : 0.1
+    objective : rmse
+    importance_type : gain
+    verbose : -1
+
+
+  early_stopping_rounds : 40
+  verbose_eval : 10

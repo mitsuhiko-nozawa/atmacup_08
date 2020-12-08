@@ -1,0 +1,38 @@
+評価がRMSLE
+
+Name : ゲーム名
+Platform : ゲーム機
+Year_of_Release : 発売日
+Genre : ゲームのジャンル
+Publisher : 発売元
+NA_Sales* : 北米での売り上げ
+EU_Sales* : ヨーロッパでの売り上げ
+JP_Sales* : 日本での売り上げ
+Other_Sales* :  他地域での売り上げ
+Global_Sales* : 全世界での売り上げ
+Critic_Score : 評論家によるレビュースコア(平均？)
+Critic_Count : レビューした評論家の数
+User_Score : ユーザーによるレビュースコア(平均？)
+User_Count : レビューしたユーザーの数
+Developer : 開発会社
+Rating : rating
+
+
+
+
+・各エリアの値を予測して足す
+・プラットフォームの普及率
+・Developerが大事そう
+
+
+
+特徴量のアイデア
+・ゲームが売れているなら…
+　・ユーザーが多い
+
+
+・ゲームが売れるかどうか
+　　・ユーザー多いなら売れている
+　　・シリーズか
+　　・地域的な差
+　　・

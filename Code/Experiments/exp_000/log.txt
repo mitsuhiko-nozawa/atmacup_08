@@ -1,0 +1,749 @@
+sccessfully comlete prepro
+Index(['Year_of_Release', 'Genre', 'Publisher', 'Critic_Score', 'Critic_Count',
+       'User_Score', 'User_Count', 'Developer', 'Rating', 'is_PS', 'is_PC',
+       'Pub_PS_rate', 'Pub_PC_rate', 'Pub_Number_of_Generation',
+       'Pub_User_Score_Sum', 'Pub_Critic_Score_Sum', 'Pub_Critic_Score_Mean',
+       'Pub_Critic_Score_Median', 'Pub_Critic_Score_Max',
+       'Pub_Critic_Score_Skew', 'Pub_Game_Num', 'Pub_Plat_Num', 'Dev_PS_rate',
+       'Dev_PC_rate', 'Dev_Spread_of_Generation', 'Dev_User_Score_Mean',
+       'Dev_Critic_Score_Sum', 'Dev_Critic_Score_Mean',
+       'Dev_Critic_Score_Median', 'Dev_Critic_Score_Max',
+       'Dev_Critic_Score_Min', 'Year_of_Release_User_Score_Sum',
+       'Year_of_Release_Game_Num', 'Year_of_Release_Plat_Num', 'equal_Pub_Dev',
+       'NA_Sales_Mean_by_Genre', 'EU_Sales_Mean_by_Genre',
+       'JP_Sales_Mean_by_Genre', 'Other_Sales_Mean_by_Genre',
+       'NA_Sales_Max_by_Genre', 'EU_Sales_Max_by_Genre',
+       'JP_Sales_Max_by_Genre', 'Other_Sales_Max_by_Genre',
+       'Global_Sales_Max_by_Genre', 'NA_Sales_Var_by_Genre',
+       'EU_Sales_Var_by_Genre', 'JP_Sales_Var_by_Genre',
+       'Other_Sales_Var_by_Genre', 'Global_Sales_Var_by_Genre',
+       'NA_Sales_Mean_by_Platform', 'EU_Sales_Mean_by_Platform',
+       'JP_Sales_Mean_by_Platform', 'Other_Sales_Mean_by_Platform',
+       'NA_Sales_Max_by_Platform', 'EU_Sales_Max_by_Platform',
+       'JP_Sales_Max_by_Platform', 'Other_Sales_Max_by_Platform',
+       'Global_Sales_Max_by_Platform', 'NA_Sales_Var_by_Platform',
+       'EU_Sales_Var_by_Platform', 'JP_Sales_Var_by_Platform',
+       'Other_Sales_Var_by_Platform', 'Global_Sales_Var_by_Platform',
+       'ce_Name'],
+      dtype='object')
+(6174, 63)
+(2185, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.41789
+[20]	valid_0's rmse: 1.31338
+[30]	valid_0's rmse: 1.26925
+[40]	valid_0's rmse: 1.24851
+[50]	valid_0's rmse: 1.24039
+[60]	valid_0's rmse: 1.22768
+[70]	valid_0's rmse: 1.22189
+[80]	valid_0's rmse: 1.22058
+[90]	valid_0's rmse: 1.21787
+[100]	valid_0's rmse: 1.21895
+[110]	valid_0's rmse: 1.22755
+[120]	valid_0's rmse: 1.22981
+[130]	valid_0's rmse: 1.23197
+Early stopping, best iteration is:
+[95]	valid_0's rmse: 1.21704
+(7540, 63)
+(819, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.01114
+[20]	valid_0's rmse: 0.897016
+[30]	valid_0's rmse: 0.852648
+[40]	valid_0's rmse: 0.835072
+[50]	valid_0's rmse: 0.824722
+[60]	valid_0's rmse: 0.815928
+[70]	valid_0's rmse: 0.812417
+[80]	valid_0's rmse: 0.813407
+[90]	valid_0's rmse: 0.810858
+[100]	valid_0's rmse: 0.809564
+[110]	valid_0's rmse: 0.810073
+[120]	valid_0's rmse: 0.808467
+[130]	valid_0's rmse: 0.811321
+[140]	valid_0's rmse: 0.812987
+[150]	valid_0's rmse: 0.813876
+Early stopping, best iteration is:
+[115]	valid_0's rmse: 0.80759
+(5807, 63)
+(2552, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.05013
+[20]	valid_0's rmse: 0.998373
+[30]	valid_0's rmse: 0.982384
+[40]	valid_0's rmse: 0.971475
+[50]	valid_0's rmse: 0.966498
+[60]	valid_0's rmse: 0.964162
+[70]	valid_0's rmse: 0.960146
+[80]	valid_0's rmse: 0.959367
+[90]	valid_0's rmse: 0.958027
+[100]	valid_0's rmse: 0.959307
+[110]	valid_0's rmse: 0.96078
+[120]	valid_0's rmse: 0.96251
+[130]	valid_0's rmse: 0.962364
+Early stopping, best iteration is:
+[93]	valid_0's rmse: 0.956516
+(6856, 63)
+(1503, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.05149
+[20]	valid_0's rmse: 0.998368
+[30]	valid_0's rmse: 0.981724
+[40]	valid_0's rmse: 0.970941
+[50]	valid_0's rmse: 0.961246
+[60]	valid_0's rmse: 0.95725
+[70]	valid_0's rmse: 0.950986
+[80]	valid_0's rmse: 0.947694
+[90]	valid_0's rmse: 0.945457
+[100]	valid_0's rmse: 0.945796
+[110]	valid_0's rmse: 0.945186
+[120]	valid_0's rmse: 0.944354
+[130]	valid_0's rmse: 0.943556
+[140]	valid_0's rmse: 0.942931
+[150]	valid_0's rmse: 0.942152
+[160]	valid_0's rmse: 0.941063
+[170]	valid_0's rmse: 0.941298
+[180]	valid_0's rmse: 0.940802
+[190]	valid_0's rmse: 0.938706
+[200]	valid_0's rmse: 0.938828
+[210]	valid_0's rmse: 0.937938
+[220]	valid_0's rmse: 0.937401
+[230]	valid_0's rmse: 0.937103
+[240]	valid_0's rmse: 0.93706
+[250]	valid_0's rmse: 0.937574
+[260]	valid_0's rmse: 0.937072
+[270]	valid_0's rmse: 0.936763
+Early stopping, best iteration is:
+[232]	valid_0's rmse: 0.936436
+(7059, 63)
+(1300, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.0609
+[20]	valid_0's rmse: 0.992354
+[30]	valid_0's rmse: 0.965086
+[40]	valid_0's rmse: 0.949099
+[50]	valid_0's rmse: 0.938407
+[60]	valid_0's rmse: 0.933647
+[70]	valid_0's rmse: 0.931443
+[80]	valid_0's rmse: 0.929261
+[90]	valid_0's rmse: 0.925823
+[100]	valid_0's rmse: 0.92453
+[110]	valid_0's rmse: 0.923153
+[120]	valid_0's rmse: 0.921692
+[130]	valid_0's rmse: 0.921336
+[140]	valid_0's rmse: 0.921892
+[150]	valid_0's rmse: 0.922994
+[160]	valid_0's rmse: 0.921488
+Early stopping, best iteration is:
+[122]	valid_0's rmse: 0.920505
+seed 0 : RMSLE is 1.0098773890527264
+Index(['Year_of_Release', 'Genre', 'Publisher', 'Critic_Score', 'Critic_Count',
+       'User_Score', 'User_Count', 'Developer', 'Rating', 'is_PS', 'is_PC',
+       'Pub_PS_rate', 'Pub_PC_rate', 'Pub_Number_of_Generation',
+       'Pub_User_Score_Sum', 'Pub_Critic_Score_Sum', 'Pub_Critic_Score_Mean',
+       'Pub_Critic_Score_Median', 'Pub_Critic_Score_Max',
+       'Pub_Critic_Score_Skew', 'Pub_Game_Num', 'Pub_Plat_Num', 'Dev_PS_rate',
+       'Dev_PC_rate', 'Dev_Spread_of_Generation', 'Dev_User_Score_Mean',
+       'Dev_Critic_Score_Sum', 'Dev_Critic_Score_Mean',
+       'Dev_Critic_Score_Median', 'Dev_Critic_Score_Max',
+       'Dev_Critic_Score_Min', 'Year_of_Release_User_Score_Sum',
+       'Year_of_Release_Game_Num', 'Year_of_Release_Plat_Num', 'equal_Pub_Dev',
+       'NA_Sales_Mean_by_Genre', 'EU_Sales_Mean_by_Genre',
+       'JP_Sales_Mean_by_Genre', 'Other_Sales_Mean_by_Genre',
+       'NA_Sales_Max_by_Genre', 'EU_Sales_Max_by_Genre',
+       'JP_Sales_Max_by_Genre', 'Other_Sales_Max_by_Genre',
+       'Global_Sales_Max_by_Genre', 'NA_Sales_Var_by_Genre',
+       'EU_Sales_Var_by_Genre', 'JP_Sales_Var_by_Genre',
+       'Other_Sales_Var_by_Genre', 'Global_Sales_Var_by_Genre',
+       'NA_Sales_Mean_by_Platform', 'EU_Sales_Mean_by_Platform',
+       'JP_Sales_Mean_by_Platform', 'Other_Sales_Mean_by_Platform',
+       'NA_Sales_Max_by_Platform', 'EU_Sales_Max_by_Platform',
+       'JP_Sales_Max_by_Platform', 'Other_Sales_Max_by_Platform',
+       'Global_Sales_Max_by_Platform', 'NA_Sales_Var_by_Platform',
+       'EU_Sales_Var_by_Platform', 'JP_Sales_Var_by_Platform',
+       'Other_Sales_Var_by_Platform', 'Global_Sales_Var_by_Platform',
+       'ce_Name'],
+      dtype='object')
+(6991, 63)
+(1368, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.11724
+[20]	valid_0's rmse: 1.07163
+[30]	valid_0's rmse: 1.04892
+[40]	valid_0's rmse: 1.03502
+[50]	valid_0's rmse: 1.02581
+[60]	valid_0's rmse: 1.02111
+[70]	valid_0's rmse: 1.0145
+[80]	valid_0's rmse: 1.01207
+[90]	valid_0's rmse: 1.01277
+[100]	valid_0's rmse: 1.01017
+[110]	valid_0's rmse: 1.00979
+[120]	valid_0's rmse: 1.01028
+[130]	valid_0's rmse: 1.00702
+[140]	valid_0's rmse: 1.00573
+[150]	valid_0's rmse: 1.00506
+[160]	valid_0's rmse: 1.00862
+[170]	valid_0's rmse: 1.00876
+Early stopping, best iteration is:
+[135]	valid_0's rmse: 1.00446
+(7117, 63)
+(1242, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.04039
+[20]	valid_0's rmse: 0.958527
+[30]	valid_0's rmse: 0.929367
+[40]	valid_0's rmse: 0.915147
+[50]	valid_0's rmse: 0.91186
+[60]	valid_0's rmse: 0.908191
+[70]	valid_0's rmse: 0.90975
+[80]	valid_0's rmse: 0.909844
+[90]	valid_0's rmse: 0.910439
+[100]	valid_0's rmse: 0.91307
+Early stopping, best iteration is:
+[63]	valid_0's rmse: 0.907435
+(7553, 63)
+(806, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.0342
+[20]	valid_0's rmse: 0.960798
+[30]	valid_0's rmse: 0.927115
+[40]	valid_0's rmse: 0.913218
+[50]	valid_0's rmse: 0.901171
+[60]	valid_0's rmse: 0.891175
+[70]	valid_0's rmse: 0.885621
+[80]	valid_0's rmse: 0.887631
+[90]	valid_0's rmse: 0.883032
+[100]	valid_0's rmse: 0.884653
+[110]	valid_0's rmse: 0.882828
+[120]	valid_0's rmse: 0.884058
+[130]	valid_0's rmse: 0.88332
+[140]	valid_0's rmse: 0.882931
+[150]	valid_0's rmse: 0.882019
+[160]	valid_0's rmse: 0.881857
+[170]	valid_0's rmse: 0.88217
+[180]	valid_0's rmse: 0.882501
+[190]	valid_0's rmse: 0.884135
+[200]	valid_0's rmse: 0.883316
+Early stopping, best iteration is:
+[167]	valid_0's rmse: 0.881253
+(7004, 63)
+(1355, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.13973
+[20]	valid_0's rmse: 1.04585
+[30]	valid_0's rmse: 1.00468
+[40]	valid_0's rmse: 0.987069
+[50]	valid_0's rmse: 0.977008
+[60]	valid_0's rmse: 0.970403
+[70]	valid_0's rmse: 0.968692
+[80]	valid_0's rmse: 0.965942
+[90]	valid_0's rmse: 0.963552
+[100]	valid_0's rmse: 0.961491
+[110]	valid_0's rmse: 0.959085
+[120]	valid_0's rmse: 0.958416
+[130]	valid_0's rmse: 0.956236
+[140]	valid_0's rmse: 0.953908
+[150]	valid_0's rmse: 0.951722
+[160]	valid_0's rmse: 0.950409
+[170]	valid_0's rmse: 0.952285
+[180]	valid_0's rmse: 0.952025
+[190]	valid_0's rmse: 0.954137
+Early stopping, best iteration is:
+[158]	valid_0's rmse: 0.949856
+(4771, 63)
+(3588, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.24388
+[20]	valid_0's rmse: 1.16408
+[30]	valid_0's rmse: 1.12454
+[40]	valid_0's rmse: 1.10766
+[50]	valid_0's rmse: 1.09988
+[60]	valid_0's rmse: 1.09525
+[70]	valid_0's rmse: 1.09417
+[80]	valid_0's rmse: 1.09356
+[90]	valid_0's rmse: 1.09139
+[100]	valid_0's rmse: 1.08743
+[110]	valid_0's rmse: 1.08525
+[120]	valid_0's rmse: 1.08249
+[130]	valid_0's rmse: 1.08054
+[140]	valid_0's rmse: 1.08013
+[150]	valid_0's rmse: 1.08081
+[160]	valid_0's rmse: 1.0808
+[170]	valid_0's rmse: 1.08155
+Early stopping, best iteration is:
+[135]	valid_0's rmse: 1.07951
+seed 1 : RMSLE is 1.0043974573989947
+Index(['Year_of_Release', 'Genre', 'Publisher', 'Critic_Score', 'Critic_Count',
+       'User_Score', 'User_Count', 'Developer', 'Rating', 'is_PS', 'is_PC',
+       'Pub_PS_rate', 'Pub_PC_rate', 'Pub_Number_of_Generation',
+       'Pub_User_Score_Sum', 'Pub_Critic_Score_Sum', 'Pub_Critic_Score_Mean',
+       'Pub_Critic_Score_Median', 'Pub_Critic_Score_Max',
+       'Pub_Critic_Score_Skew', 'Pub_Game_Num', 'Pub_Plat_Num', 'Dev_PS_rate',
+       'Dev_PC_rate', 'Dev_Spread_of_Generation', 'Dev_User_Score_Mean',
+       'Dev_Critic_Score_Sum', 'Dev_Critic_Score_Mean',
+       'Dev_Critic_Score_Median', 'Dev_Critic_Score_Max',
+       'Dev_Critic_Score_Min', 'Year_of_Release_User_Score_Sum',
+       'Year_of_Release_Game_Num', 'Year_of_Release_Plat_Num', 'equal_Pub_Dev',
+       'NA_Sales_Mean_by_Genre', 'EU_Sales_Mean_by_Genre',
+       'JP_Sales_Mean_by_Genre', 'Other_Sales_Mean_by_Genre',
+       'NA_Sales_Max_by_Genre', 'EU_Sales_Max_by_Genre',
+       'JP_Sales_Max_by_Genre', 'Other_Sales_Max_by_Genre',
+       'Global_Sales_Max_by_Genre', 'NA_Sales_Var_by_Genre',
+       'EU_Sales_Var_by_Genre', 'JP_Sales_Var_by_Genre',
+       'Other_Sales_Var_by_Genre', 'Global_Sales_Var_by_Genre',
+       'NA_Sales_Mean_by_Platform', 'EU_Sales_Mean_by_Platform',
+       'JP_Sales_Mean_by_Platform', 'Other_Sales_Mean_by_Platform',
+       'NA_Sales_Max_by_Platform', 'EU_Sales_Max_by_Platform',
+       'JP_Sales_Max_by_Platform', 'Other_Sales_Max_by_Platform',
+       'Global_Sales_Max_by_Platform', 'NA_Sales_Var_by_Platform',
+       'EU_Sales_Var_by_Platform', 'JP_Sales_Var_by_Platform',
+       'Other_Sales_Var_by_Platform', 'Global_Sales_Var_by_Platform',
+       'ce_Name'],
+      dtype='object')
+(6216, 63)
+(2143, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.32193
+[20]	valid_0's rmse: 1.2326
+[30]	valid_0's rmse: 1.2006
+[40]	valid_0's rmse: 1.18782
+[50]	valid_0's rmse: 1.18532
+[60]	valid_0's rmse: 1.17988
+[70]	valid_0's rmse: 1.17689
+[80]	valid_0's rmse: 1.17301
+[90]	valid_0's rmse: 1.17483
+[100]	valid_0's rmse: 1.17632
+[110]	valid_0's rmse: 1.17579
+[120]	valid_0's rmse: 1.17778
+Early stopping, best iteration is:
+[83]	valid_0's rmse: 1.17187
+(6464, 63)
+(1895, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.07172
+[20]	valid_0's rmse: 1.01847
+[30]	valid_0's rmse: 0.99702
+[40]	valid_0's rmse: 0.988268
+[50]	valid_0's rmse: 0.984402
+[60]	valid_0's rmse: 0.97927
+[70]	valid_0's rmse: 0.979192
+[80]	valid_0's rmse: 0.980451
+[90]	valid_0's rmse: 0.980508
+[100]	valid_0's rmse: 0.979673
+Early stopping, best iteration is:
+[63]	valid_0's rmse: 0.977976
+(7028, 63)
+(1331, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.00997
+[20]	valid_0's rmse: 0.956412
+[30]	valid_0's rmse: 0.940122
+[40]	valid_0's rmse: 0.932186
+[50]	valid_0's rmse: 0.926725
+[60]	valid_0's rmse: 0.927639
+[70]	valid_0's rmse: 0.92579
+[80]	valid_0's rmse: 0.922929
+[90]	valid_0's rmse: 0.922528
+[100]	valid_0's rmse: 0.924335
+[110]	valid_0's rmse: 0.926387
+[120]	valid_0's rmse: 0.927538
+Early stopping, best iteration is:
+[86]	valid_0's rmse: 0.922283
+(6859, 63)
+(1500, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.06496
+[20]	valid_0's rmse: 0.963478
+[30]	valid_0's rmse: 0.925097
+[40]	valid_0's rmse: 0.908749
+[50]	valid_0's rmse: 0.904663
+[60]	valid_0's rmse: 0.900131
+[70]	valid_0's rmse: 0.896044
+[80]	valid_0's rmse: 0.896209
+[90]	valid_0's rmse: 0.895019
+[100]	valid_0's rmse: 0.896133
+[110]	valid_0's rmse: 0.898987
+Early stopping, best iteration is:
+[74]	valid_0's rmse: 0.894192
+(6869, 63)
+(1490, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.17022
+[20]	valid_0's rmse: 1.09793
+[30]	valid_0's rmse: 1.06413
+[40]	valid_0's rmse: 1.04795
+[50]	valid_0's rmse: 1.03865
+[60]	valid_0's rmse: 1.03561
+[70]	valid_0's rmse: 1.0323
+[80]	valid_0's rmse: 1.03043
+[90]	valid_0's rmse: 1.03106
+[100]	valid_0's rmse: 1.03115
+[110]	valid_0's rmse: 1.03074
+[120]	valid_0's rmse: 1.03039
+[130]	valid_0's rmse: 1.03009
+[140]	valid_0's rmse: 1.02957
+[150]	valid_0's rmse: 1.0273
+[160]	valid_0's rmse: 1.02573
+[170]	valid_0's rmse: 1.02639
+[180]	valid_0's rmse: 1.02531
+[190]	valid_0's rmse: 1.02716
+[200]	valid_0's rmse: 1.0271
+[210]	valid_0's rmse: 1.02636
+[220]	valid_0's rmse: 1.02499
+[230]	valid_0's rmse: 1.02606
+[240]	valid_0's rmse: 1.02497
+[250]	valid_0's rmse: 1.0242
+[260]	valid_0's rmse: 1.02502
+[270]	valid_0's rmse: 1.0245
+[280]	valid_0's rmse: 1.02756
+[290]	valid_0's rmse: 1.02716
+Early stopping, best iteration is:
+[250]	valid_0's rmse: 1.0242
+seed 2 : RMSLE is 1.0172514626878966
+Index(['Year_of_Release', 'Genre', 'Publisher', 'Critic_Score', 'Critic_Count',
+       'User_Score', 'User_Count', 'Developer', 'Rating', 'is_PS', 'is_PC',
+       'Pub_PS_rate', 'Pub_PC_rate', 'Pub_Number_of_Generation',
+       'Pub_User_Score_Sum', 'Pub_Critic_Score_Sum', 'Pub_Critic_Score_Mean',
+       'Pub_Critic_Score_Median', 'Pub_Critic_Score_Max',
+       'Pub_Critic_Score_Skew', 'Pub_Game_Num', 'Pub_Plat_Num', 'Dev_PS_rate',
+       'Dev_PC_rate', 'Dev_Spread_of_Generation', 'Dev_User_Score_Mean',
+       'Dev_Critic_Score_Sum', 'Dev_Critic_Score_Mean',
+       'Dev_Critic_Score_Median', 'Dev_Critic_Score_Max',
+       'Dev_Critic_Score_Min', 'Year_of_Release_User_Score_Sum',
+       'Year_of_Release_Game_Num', 'Year_of_Release_Plat_Num', 'equal_Pub_Dev',
+       'NA_Sales_Mean_by_Genre', 'EU_Sales_Mean_by_Genre',
+       'JP_Sales_Mean_by_Genre', 'Other_Sales_Mean_by_Genre',
+       'NA_Sales_Max_by_Genre', 'EU_Sales_Max_by_Genre',
+       'JP_Sales_Max_by_Genre', 'Other_Sales_Max_by_Genre',
+       'Global_Sales_Max_by_Genre', 'NA_Sales_Var_by_Genre',
+       'EU_Sales_Var_by_Genre', 'JP_Sales_Var_by_Genre',
+       'Other_Sales_Var_by_Genre', 'Global_Sales_Var_by_Genre',
+       'NA_Sales_Mean_by_Platform', 'EU_Sales_Mean_by_Platform',
+       'JP_Sales_Mean_by_Platform', 'Other_Sales_Mean_by_Platform',
+       'NA_Sales_Max_by_Platform', 'EU_Sales_Max_by_Platform',
+       'JP_Sales_Max_by_Platform', 'Other_Sales_Max_by_Platform',
+       'Global_Sales_Max_by_Platform', 'NA_Sales_Var_by_Platform',
+       'EU_Sales_Var_by_Platform', 'JP_Sales_Var_by_Platform',
+       'Other_Sales_Var_by_Platform', 'Global_Sales_Var_by_Platform',
+       'ce_Name'],
+      dtype='object')
+(6738, 63)
+(1621, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.05891
+[20]	valid_0's rmse: 1.01659
+[30]	valid_0's rmse: 0.991331
+[40]	valid_0's rmse: 0.97633
+[50]	valid_0's rmse: 0.970811
+[60]	valid_0's rmse: 0.966025
+[70]	valid_0's rmse: 0.964808
+[80]	valid_0's rmse: 0.963758
+[90]	valid_0's rmse: 0.962648
+[100]	valid_0's rmse: 0.964181
+[110]	valid_0's rmse: 0.966309
+[120]	valid_0's rmse: 0.966833
+Early stopping, best iteration is:
+[87]	valid_0's rmse: 0.962288
+(7331, 63)
+(1028, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.04226
+[20]	valid_0's rmse: 0.965253
+[30]	valid_0's rmse: 0.931747
+[40]	valid_0's rmse: 0.914807
+[50]	valid_0's rmse: 0.908429
+[60]	valid_0's rmse: 0.906059
+[70]	valid_0's rmse: 0.90287
+[80]	valid_0's rmse: 0.897224
+[90]	valid_0's rmse: 0.898595
+[100]	valid_0's rmse: 0.897243
+[110]	valid_0's rmse: 0.89694
+[120]	valid_0's rmse: 0.899459
+[130]	valid_0's rmse: 0.898181
+[140]	valid_0's rmse: 0.897489
+[150]	valid_0's rmse: 0.897772
+[160]	valid_0's rmse: 0.897901
+[170]	valid_0's rmse: 0.897124
+[180]	valid_0's rmse: 0.89789
+[190]	valid_0's rmse: 0.897159
+[200]	valid_0's rmse: 0.895489
+[210]	valid_0's rmse: 0.896629
+[220]	valid_0's rmse: 0.897691
+[230]	valid_0's rmse: 0.898035
+Early stopping, best iteration is:
+[198]	valid_0's rmse: 0.894985
+(7652, 63)
+(707, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.01033
+[20]	valid_0's rmse: 0.874778
+[30]	valid_0's rmse: 0.834383
+[40]	valid_0's rmse: 0.82201
+[50]	valid_0's rmse: 0.817826
+[60]	valid_0's rmse: 0.815146
+[70]	valid_0's rmse: 0.813754
+[80]	valid_0's rmse: 0.811961
+[90]	valid_0's rmse: 0.8145
+[100]	valid_0's rmse: 0.813899
+[110]	valid_0's rmse: 0.814154
+[120]	valid_0's rmse: 0.817015
+Early stopping, best iteration is:
+[80]	valid_0's rmse: 0.811961
+(5222, 63)
+(3137, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.12729
+[20]	valid_0's rmse: 1.07382
+[30]	valid_0's rmse: 1.0532
+[40]	valid_0's rmse: 1.04425
+[50]	valid_0's rmse: 1.03691
+[60]	valid_0's rmse: 1.03238
+[70]	valid_0's rmse: 1.03201
+[80]	valid_0's rmse: 1.02934
+[90]	valid_0's rmse: 1.03185
+[100]	valid_0's rmse: 1.03235
+[110]	valid_0's rmse: 1.03281
+[120]	valid_0's rmse: 1.03285
+Early stopping, best iteration is:
+[81]	valid_0's rmse: 1.02914
+(6493, 63)
+(1866, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.33492
+[20]	valid_0's rmse: 1.23094
+[30]	valid_0's rmse: 1.19746
+[40]	valid_0's rmse: 1.16614
+[50]	valid_0's rmse: 1.15696
+[60]	valid_0's rmse: 1.14466
+[70]	valid_0's rmse: 1.1402
+[80]	valid_0's rmse: 1.13169
+[90]	valid_0's rmse: 1.12993
+[100]	valid_0's rmse: 1.12644
+[110]	valid_0's rmse: 1.11917
+[120]	valid_0's rmse: 1.11566
+[130]	valid_0's rmse: 1.11546
+[140]	valid_0's rmse: 1.11397
+[150]	valid_0's rmse: 1.11424
+[160]	valid_0's rmse: 1.11333
+[170]	valid_0's rmse: 1.11461
+[180]	valid_0's rmse: 1.11262
+[190]	valid_0's rmse: 1.11071
+[200]	valid_0's rmse: 1.11207
+[210]	valid_0's rmse: 1.11326
+[220]	valid_0's rmse: 1.11214
+Early stopping, best iteration is:
+[189]	valid_0's rmse: 1.11044
+seed 3 : RMSLE is 1.0032844645959624
+Index(['Year_of_Release', 'Genre', 'Publisher', 'Critic_Score', 'Critic_Count',
+       'User_Score', 'User_Count', 'Developer', 'Rating', 'is_PS', 'is_PC',
+       'Pub_PS_rate', 'Pub_PC_rate', 'Pub_Number_of_Generation',
+       'Pub_User_Score_Sum', 'Pub_Critic_Score_Sum', 'Pub_Critic_Score_Mean',
+       'Pub_Critic_Score_Median', 'Pub_Critic_Score_Max',
+       'Pub_Critic_Score_Skew', 'Pub_Game_Num', 'Pub_Plat_Num', 'Dev_PS_rate',
+       'Dev_PC_rate', 'Dev_Spread_of_Generation', 'Dev_User_Score_Mean',
+       'Dev_Critic_Score_Sum', 'Dev_Critic_Score_Mean',
+       'Dev_Critic_Score_Median', 'Dev_Critic_Score_Max',
+       'Dev_Critic_Score_Min', 'Year_of_Release_User_Score_Sum',
+       'Year_of_Release_Game_Num', 'Year_of_Release_Plat_Num', 'equal_Pub_Dev',
+       'NA_Sales_Mean_by_Genre', 'EU_Sales_Mean_by_Genre',
+       'JP_Sales_Mean_by_Genre', 'Other_Sales_Mean_by_Genre',
+       'NA_Sales_Max_by_Genre', 'EU_Sales_Max_by_Genre',
+       'JP_Sales_Max_by_Genre', 'Other_Sales_Max_by_Genre',
+       'Global_Sales_Max_by_Genre', 'NA_Sales_Var_by_Genre',
+       'EU_Sales_Var_by_Genre', 'JP_Sales_Var_by_Genre',
+       'Other_Sales_Var_by_Genre', 'Global_Sales_Var_by_Genre',
+       'NA_Sales_Mean_by_Platform', 'EU_Sales_Mean_by_Platform',
+       'JP_Sales_Mean_by_Platform', 'Other_Sales_Mean_by_Platform',
+       'NA_Sales_Max_by_Platform', 'EU_Sales_Max_by_Platform',
+       'JP_Sales_Max_by_Platform', 'Other_Sales_Max_by_Platform',
+       'Global_Sales_Max_by_Platform', 'NA_Sales_Var_by_Platform',
+       'EU_Sales_Var_by_Platform', 'JP_Sales_Var_by_Platform',
+       'Other_Sales_Var_by_Platform', 'Global_Sales_Var_by_Platform',
+       'ce_Name'],
+      dtype='object')
+(6359, 63)
+(2000, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.14144
+[20]	valid_0's rmse: 1.06504
+[30]	valid_0's rmse: 1.02745
+[40]	valid_0's rmse: 1.00838
+[50]	valid_0's rmse: 0.995319
+[60]	valid_0's rmse: 0.986134
+[70]	valid_0's rmse: 0.977117
+[80]	valid_0's rmse: 0.96935
+[90]	valid_0's rmse: 0.968334
+[100]	valid_0's rmse: 0.964193
+[110]	valid_0's rmse: 0.962126
+[120]	valid_0's rmse: 0.959355
+[130]	valid_0's rmse: 0.958046
+[140]	valid_0's rmse: 0.958242
+[150]	valid_0's rmse: 0.957724
+[160]	valid_0's rmse: 0.95562
+[170]	valid_0's rmse: 0.954776
+[180]	valid_0's rmse: 0.954039
+[190]	valid_0's rmse: 0.953519
+[200]	valid_0's rmse: 0.951805
+[210]	valid_0's rmse: 0.951502
+[220]	valid_0's rmse: 0.951999
+[230]	valid_0's rmse: 0.95219
+[240]	valid_0's rmse: 0.952645
+[250]	valid_0's rmse: 0.953988
+Early stopping, best iteration is:
+[210]	valid_0's rmse: 0.951502
+(7025, 63)
+(1334, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.05854
+[20]	valid_0's rmse: 0.980141
+[30]	valid_0's rmse: 0.960622
+[40]	valid_0's rmse: 0.948912
+[50]	valid_0's rmse: 0.940689
+[60]	valid_0's rmse: 0.937535
+[70]	valid_0's rmse: 0.936343
+[80]	valid_0's rmse: 0.937683
+[90]	valid_0's rmse: 0.936639
+[100]	valid_0's rmse: 0.935024
+[110]	valid_0's rmse: 0.93393
+[120]	valid_0's rmse: 0.932375
+[130]	valid_0's rmse: 0.935676
+[140]	valid_0's rmse: 0.93618
+[150]	valid_0's rmse: 0.934975
+[160]	valid_0's rmse: 0.935417
+Early stopping, best iteration is:
+[121]	valid_0's rmse: 0.931893
+(6747, 63)
+(1612, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.42006
+[20]	valid_0's rmse: 1.31639
+[30]	valid_0's rmse: 1.27154
+[40]	valid_0's rmse: 1.25075
+[50]	valid_0's rmse: 1.24267
+[60]	valid_0's rmse: 1.22869
+[70]	valid_0's rmse: 1.2231
+[80]	valid_0's rmse: 1.21671
+[90]	valid_0's rmse: 1.21523
+[100]	valid_0's rmse: 1.21351
+[110]	valid_0's rmse: 1.20972
+[120]	valid_0's rmse: 1.21585
+[130]	valid_0's rmse: 1.21645
+[140]	valid_0's rmse: 1.21455
+Early stopping, best iteration is:
+[108]	valid_0's rmse: 1.20912
+(6886, 63)
+(1473, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.03648
+[20]	valid_0's rmse: 0.990023
+[30]	valid_0's rmse: 0.97517
+[40]	valid_0's rmse: 0.963641
+[50]	valid_0's rmse: 0.955629
+[60]	valid_0's rmse: 0.950122
+[70]	valid_0's rmse: 0.950231
+[80]	valid_0's rmse: 0.948818
+[90]	valid_0's rmse: 0.947288
+[100]	valid_0's rmse: 0.945283
+[110]	valid_0's rmse: 0.946024
+[120]	valid_0's rmse: 0.943966
+[130]	valid_0's rmse: 0.943055
+[140]	valid_0's rmse: 0.943566
+[150]	valid_0's rmse: 0.943127
+[160]	valid_0's rmse: 0.946053
+[170]	valid_0's rmse: 0.94504
+Early stopping, best iteration is:
+[132]	valid_0's rmse: 0.942593
+(6419, 63)
+(1940, 63)
+[LightGBM] [Warning] Unknown parameter: importance_type
+[LightGBM] [Warning] Accuracy may be bad since you didn't explicitly set num_leaves OR 2^max_depth > num_leaves. (num_leaves=31).
+Training until validation scores don't improve for 40 rounds
+[10]	valid_0's rmse: 1.1045
+[20]	valid_0's rmse: 1.0314
+[30]	valid_0's rmse: 1.00942
+[40]	valid_0's rmse: 0.996786
+[50]	valid_0's rmse: 0.991662
+[60]	valid_0's rmse: 0.993129
+[70]	valid_0's rmse: 0.990728
+[80]	valid_0's rmse: 0.988099
+[90]	valid_0's rmse: 0.989402
+[100]	valid_0's rmse: 0.98791
+[110]	valid_0's rmse: 0.989418
+[120]	valid_0's rmse: 0.988435
+Early stopping, best iteration is:
+[85]	valid_0's rmse: 0.987504
+seed 4 : RMSLE is 1.0099668030233633
+final RMSLE is 0.983244084895307
+2_2.pkl
+0_3.pkl
+0_4.pkl
+3_2.pkl
+4_1.pkl
+1_3.pkl
+1_4.pkl
+0_2.pkl
+2_4.pkl
+2_3.pkl
+1_2.pkl
+4_0.pkl
+3_4.pkl
+3_3.pkl
+1_1.pkl
+4_3.pkl
+4_4.pkl
+3_0.pkl
+0_1.pkl
+2_0.pkl
+3_1.pkl
+4_2.pkl
+1_0.pkl
+2_1.pkl
+0_0.pkl
+success
