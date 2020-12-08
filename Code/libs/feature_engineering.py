@@ -30,8 +30,36 @@ def make_func(func_name):
         return Year_of_Release_encode
     elif func_name == "Rating_encode":
         return Rating_encode
+    elif func_name == "is_Release_Year_of_Platform":
+        return is_Release_Year_of_Platform
+    elif func_name == "Prod":
+        return Prod
+
+def Prod(module, param):
+    if param["flag"]:
+        train_df, test_df, all_df = pick_data(module)
+        for cols in param["cols"]:
+            name = " * ".join(cols)
+            all_df[name] = ""
+            for i, col in enumerate(cols):
+                if i != 0:
+                    all_df[name] = all_df[name] + " * "
+                all_df[name] = all_df[name] +  all_df[col].astype("str").fillna("Null")
+        return save_module(module, all_df, train_df.shape[0])
+    else :
+        return module
 
 
+def is_Release_Year_of_Platform(module, param):
+    if param["flag"]:
+        train_df, test_df, all_df = pick_data(module)
+        gb = all_df.groupby("Platform")
+        min_Y = gb["Year_of_Release"].min()
+        all_df["is_Release_Year_of_Platform"] = all_df["Platform"].map(min_Y)
+        all_df["is_Release_Year_of_Platform"] = (all_df["is_Release_Year_of_Platform"] == all_df["Year_of_Release"]).astype(int)
+        return save_module(module, all_df, train_df.shape[0])
+    else :
+        return module
 
 def equal_Pub_Dev(module, param):
     if param["flag"]:
@@ -66,17 +94,18 @@ def User_Count_tbd2Null(module, param):
 
 
 def label_encode(module, param):
-    """
-    ・attribute
-    module : dict of data
-    cols : columns to encode 
+    
+    #attribute
+    #module : dict of data
+    #cols : columns to encode 
 
-    ・return 
-    module (updated)
-    """
+    #return 
+    #module (updated)
+    
     if param["flag"]:
         train_df, test_df, all_df = pick_data(module)
-        for col in param["cols"]:
+        cols = param["cols"] + [col for col in all_df.columns if all_df[col].dtype not in [int, float]]
+        for col in cols:
             all_df[col] = LabelEncoder().fit_transform(all_df[col].values.reshape(-1,))
         return save_module(module, all_df, train_df.shape[0])
     else :

@@ -13,7 +13,7 @@ class Logger():
     def __call__(self, module):
         ############################################################
         if self.param["make_submit"]["flag"]:
-            sub_df = module["test_X"]
+            sub_df = module["test_X"].copy()
             sub_df[self.param["target_col"]] = module["test_y"]
             for col in sub_df.columns:
                 if col != self.param["target_col"]:
@@ -27,6 +27,9 @@ class Logger():
             save_path = osp.join(self.param["dir_path"], "X.csv")
             X.to_csv(save_path, index=False)
 
+            test_X = module["test_X"]
+            save_path = osp.join(self.param["dir_path"], "test_X.csv")
+            test_X.to_csv(save_path, index=False)
         ############################################################
         if self.param["make_train_preds"]["flag"]:
             train_preds = pd.DataFrame(module["train_preds"], columns=["Global_Sales"])

@@ -8,6 +8,7 @@ from validation import KFManager
 import lightgbm as lgb
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import LabelEncoder
 
 
 
@@ -18,7 +19,7 @@ class Train():
     def __call__(self, module):
         train_preds = []
         errs = []
-
+        # label_encode:
         for seed in self.param["seeds"]:
             oof_preds, err = self.train_by_seed(seed, module)
             train_preds.append(oof_preds)

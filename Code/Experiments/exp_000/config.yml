@@ -1,6 +1,6 @@
 common_param :
-  dir_path : /home/ubuntu/atmacup/08/Code/Experiments/exp_000
-  data_path : /home/ubuntu/atmacup/08/Data
+  dir_path : /content/drive/MyDrive/contest/atmacup/08/Code/Experiments/exp_000
+  data_path : /content/drive/MyDrive/contest/atmacup/08/Data
   train_file : train.csv
   test_file : test.csv
 
@@ -9,19 +9,32 @@ common_param :
 
 prepro_param : 
   piplines : [
+    Prod,
     Publisher_encode,
     Developer_encode,
     Year_of_Release_encode,
-    Rating_encode,
+    #Rating_encode,
     equal_Pub_Dev,
     Summarize_Sales, 
+    is_Release_Year_of_Platform,
     count_encode,
     onehot_encode,
     User_Count_tbd2Null, 
     fillna, 
     label_encode, 
     make_X_y,
+    
   ]
+  Prod : 
+    flag : True
+    cols : [
+      [Year_of_Release, Platform],
+      [Year_of_Release, Genre],
+      [Genre, Platform],
+    ]
+
+  is_Release_Year_of_Platform : 
+    flag : True
 
   Rating_encode : 
     flag : True
@@ -54,7 +67,7 @@ prepro_param :
     
   label_encode : 
     flag : True
-    cols : [Platform, Year_of_Release, Genre, Publisher, Developer, Rating]
+    cols : [Year_of_Release]
 
   make_X_y : 
     flag : True
@@ -64,7 +77,13 @@ prepro_param :
   Summarize_Sales :
     flag : True
     sales_cols : [NA_Sales, EU_Sales, JP_Sales, Other_Sales, Global_Sales]
-    by : [Genre, Platform] # Developer, Year_of_Releaseはだめ
+    by : [
+      Genre, 
+      Platform, 
+      Year_of_Release * Platform,
+      Year_of_Release * Genre,
+      Genre * Platform,
+    ] # Developer, Year_of_Releaseはだめ
 
 
 
@@ -89,11 +108,13 @@ train_param :
     max_depth : 6
     n_estimators : 10000
     colsample_bytree : 0.5
-    #num_leaves : 28
+    num_leaves : 12
     learning_rate : 0.1
     objective : rmse
-    importance_type : gain
+    #saved_feature_importance_type : 1
     verbose : -1
+    min_child_samples : 120
+    max_bin : 
 
 
   early_stopping_rounds : 40

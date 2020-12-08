@@ -12,9 +12,8 @@ class Infer():
         preds = []
         test_X = module["test_X"]
         if "Publisher" in test_X.columns:
-            test_X.drop("Publisher", axis=1, inplace=True)
+            test_X = test_X.drop("Publisher", axis=1)
 
-        #test_X = test_X[['Critic_Score','Critic_Count', 'User_Score', 'User_Count','Year_of_Release']]
 
         test_y = []
         for file in weight_files:
